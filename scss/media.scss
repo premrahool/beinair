@@ -1,0 +1,44 @@
+/* -- Media Query -- */ 
+$mobile-width: 320px;
+$smartphone-width: 480px;
+$tablet-width: 768px;
+$laptop-width: 1024px;
+$desktop-width: 1280px;
+
+
+/*   ##Device = Most of the Smartphones Mobiles (Portrait),  ##Screen = B/w 320px to 479px  */
+@mixin mobile {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$smartphone-width}) {
+        @content;
+    }
+}  
+
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape),  ##Screen = B/w 481px to 767px  */
+@mixin smartphone {
+    @media (min-width: #{$smartphone-width + 1px}) and (max-width: #{$tablet-width - 1px}) {
+        @content;
+    }
+} 
+
+/* ##Device = Tablets, Ipads (portrait), ##Screen = B/w 768px to 1024px  */
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$laptop-width}) {
+        @content;
+    }
+}  
+
+/* ##Device = Laptops, Desktops, ##Screen = B/w 1025px to 1280px */
+@mixin laptop {
+    @media (min-width: #{$laptop-width + 1px}) and (max-width: #{$desktop-width}) {
+        @content;
+    }
+}   
+
+/*  ##Device = Desktops, ##Screen = 1281px to higher resolution desktops */
+@mixin desktop {
+    @media (min-width: #{$desktop-width + 1px}) {
+        @content;
+    }
+}
+
+

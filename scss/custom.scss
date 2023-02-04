@@ -1,0 +1,319 @@
+
+/* -- Common -- */
+.relative {position: relative;}
+
+/* -- Margin -- */
+.mr0 {margin: $px0;}
+.mrT10 {margin-top: $px10;}
+.mrT20 {margin-top: $px20;}
+.mrT30 {margin-top: $px30;}
+.mrB10 {margin-bottom: $px10;}
+.mrB20 {margin-bottom: $px20;}
+.mrB30 {margin-bottom: $px30;}
+
+/* -- Padding -- */
+.pd0 {padding: $px0;}
+.pdT10 {padding-top: $px10;}
+.pdT20 {padding-top: $px20;}
+.pdT30 {padding-top: $px30;}
+.pdB10 {padding-bottom: $px10;}
+.pdB20 {padding-bottom: $px20;}
+.pdB30 {padding-bottom: $px30;}
+
+/* -- Main Nav -- */
+.mainBg {background: url(../images/bgBanner.jpg) center center no-repeat;background-size: cover;background-attachment: fixed; margin-bottom: $px50;
+    @include mobile {margin-bottom: $px20;}
+    @include tablet {margin-bottom: $px20;}
+}
+.mainNav {
+    .navbar-default { background-color:$transparent;  border-color: $transparent;margin-bottom: $px0;padding: $px5 $px0;
+        .navbar-nav {margin-top: $px12;
+            > li > { 
+                a {font-size: $font16; color: $colorwhite; padding-top: $px5; padding-bottom: $px5;font-weight:$standard;
+                    &:hover {color: $colorgrey;}
+                }
+            }
+            > li.phone-no {
+                > a {font-size: $font18;font-weight: $bold; margin-top: 7px;
+                    i {color:$coloryellow;}
+                }
+                small {position: absolute;top: -5px;left: $px35;color: $colorwhite;}
+            }
+        }
+        .icon-bar {background-color: $colorwhite;width: $px18;}
+        .navbar-toggle { padding: 5px 10px;border-color: $colorwhite;}
+    }
+    .navbar-brand {padding: $px5 $px5;height: $px40; width: 250px;
+        img {height: $px40;
+            @include mobile {height: $px30;}
+        }
+    }
+    
+}
+
+/* -- Banner Text -- */
+.mainBG-txt.jumbotron { padding-top: $px30; padding-bottom: $px30; background-color: $transparent;
+        @include mobile {padding-top: $px0;padding-bottom: $px0;margin-bottom: $px5;}
+        @include tablet {padding-top: $px0;padding-bottom: $px0;margin-bottom: $px20;}
+    h1 {color: #fff;font-size: $px30;
+        @include mobile {font-size: $font18;margin-top: $px10;}
+        span {font-weight: $regular;}
+        strong {font-weight: $bold;}
+    }
+}
+
+/* -- Search Widget -- */
+.searchWidget {margin-bottom: 100px;
+    @include mobile {margin-bottom: $px15;}
+    @include tablet {margin-bottom: $px0;}
+    .tab-content {padding: $px30 $px0;
+        @include mobile {padding: $px15 $px0;}
+        @include tablet {padding: $px20 $px0;}
+    }
+    .nav-tabs {border-bottom: none;
+        li a {border-radius: $px0;padding: $px15 $px4; margin-right: $px40;line-height: $px0;
+            @include mobile {margin-right: $px10;}
+        }
+    }
+}
+.searchForm {
+    .form-control {height: $px55;background-color: $colorwhite; border-right-color: #727274;color: $colorblack;font-size: $font18;border-radius:$px0;font-family: $font-lato;
+        @include mobile {font-size: $font16; height: $px40;}
+    }
+    .inputFull.input-group {margin-bottom: $px30;
+        @include mobile {margin-bottom: $px15;}
+        @include tablet {margin-bottom: $px15;}
+        .input-group-addon {
+            &.blkI {background-color: $colorlightblack;border-color: $colorlightblack; border-radius: $px0;
+                img {height: $px25;width: $px30;
+                    @include mobile {height: $px15;width: $px15;}
+                }
+            }
+            &.mapp {background-color: rgba(224, 224, 224, 0.25); border-color:rgba(224, 224, 224, 0);border-radius: $px0;
+                 @include mobile {background-color: rgba(0, 0, 0, 0.25); border-color: rgba(0, 0, 0, 0); }
+                img {height: $px25;width: $px20;
+                    @include mobile {height: $px20;width: $px15;}
+                }
+            }
+        }
+        .form-control {background-color: rgba(224, 224, 224, 0.25); border-color: rgba(224, 224, 224, 0);border-right:none;color: $colorwhite;font-size: $font20; 
+            @include mobile {font-size: $font14;background-color: rgba(0, 0, 0, 0.25); border-color: rgba(0, 0, 0, 0); }
+        }
+        @include placeholder {color: $colorwhite; font-size: $font20; font-weight:$bold; font-family: $font-lato;
+            @include mobile {font-size: $font14; height: $px40;}
+        }
+    }
+    .btn-yellow {width: $width100;height: $px55;
+        @include mobile {font-size: $font16;height: $px40;}
+    }
+    .lwInput {
+        .form-control {margin-bottom: $px15;color:$colordarkgrey;font-size: $font15; text-transform: uppercase;
+            @include mobile {font-size: $font12; height: $px40;}
+            &.withIcon {padding-left: $px30; text-align: left;
+                @include mobile {font-size: $font12; height: $px40;}
+            }
+        }
+        @include placeholder {color: $colordarkgrey; font-weight: $regular;} 
+        i {position: absolute;left: 5%;top: 30%;color:$colordarkgrey;
+            @include mobile {top:25%;}
+            @include tablet {left:2%;}
+        &.caretD {right: 5%;left: initial;}
+        }
+    }
+    .flightPortDtl{margin-bottom: $px15;
+        @include mobile {margin-top: $px10; margin-bottom: $px0;}
+        @include tablet {margin-top: $px10; margin-bottom: $px0;}
+        p, span, .checkbox-inline {color: $colorwhite;font-weight: $bold; margin-right: $px15; font-size: $font16;cursor: pointer;
+            @include mobile {font-size: $font13;}
+            &:hover {color: $coloryellow;text-decoration: none;}
+            &:focus {text-decoration: none;}
+        }
+        .checkbox-inline input[type=checkbox] {margin-left: -18px; margin-top: 6px;} 
+        .rtnFrmOtrForm, .prefferedAirSelect {display: none; margin-top: $px10;}
+        .prefferedAirSelect select {margin-top: -2px;}
+        .PrefferdText {display: inline;}
+    }
+}
+.datepicker{
+    &.dropdown-menu {padding: $px5 $px10; border-radius: $px0;background-color: $colorlightblack;color: $colorwhite;}
+    .table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th { padding: $px8 $px10;}
+    table tr td.today, table tr td.today.disabled, table tr td.today.disabled:hover, table tr td.today:hover {background:$colorwhite;background-image: none !important;border-radius:$px0;}
+    table tr td.day.focused, table tr td.day:hover,  .datepicker-switch:hover,  .next:hover,  .prev:hover,  tfoot tr th:hover, table tr td span.focused, table tr td span:hover, table tr td span.active, table tr td span.active.disabled, table tr td span.active.disabled:hover, table tr td span.active:hover {background-color: $coloryellow !important;background-image: none;color: $colorblack;border-radius:$px0;}
+    table tr td.range,  table tr td.range.disabled,  table tr td.range.disabled:hover,  table tr td.range:hover {background: $colordarkgrey; color: $colorwhite;border-radius:$px0;}
+    table tr td.active.active,  table tr td.active.disabled,  table tr td.active.disabled.active,  table tr td.active.disabled.disabled,  table tr td.active.disabled:active,  table tr td.active.disabled:hover,  table tr td.active.disabled:hover.active,  table tr td.active.disabled:hover.disabled,  table tr td.active.disabled:hover:active,  table tr td.active.disabled:hover:hover,  table tr td.active.disabled:hover[disabled],  table tr td.active.disabled[disabled],  table tr td.active:active,  table tr td.active:hover,  table tr td.active:hover.active,  table tr td.active:hover.disabled,  table tr td.active:hover:active,  table tr td.active:hover:hover,  table tr td.active:hover[disabled],  table tr td.active[disabled], table tr td.selected {background-color: $coloryellow;background-image: none;color: $colorblack;border-radius:$px0; }
+    &.datepicker-dropdown.datepicker-orient-top:before, &.datepicker-dropdown.datepicker-orient-top:after {border-top: 7px solid $colorlightblack;}
+}
+
+/* -- Explore -- */
+.exploreM {background-color: $colorlightblack;color: $colorwhite; margin-bottom: $px50;padding-top: $px35;padding-bottom: $px35;position: relative;
+        @include mobile {margin-bottom: $px10;padding: $px20 $px0;}
+        @include tablet {margin-bottom: $px20;padding: $px20 $px0;}
+    .headOne {font-family: $font-lato;font-size: $px40;font-weight: $bold;color: $coloryellow;margin-top: $px0; margin-bottom: $px15;
+        @include mobile {font-size: $px20;}
+    }
+    .lines {font-family: $font-lato;font-size: $font20;font-weight: $light;}
+    .expModalLink {border-left: $px5 solid $txtcolor1;padding-left: $px40;color: $colorwhite;font-size: $px30;font-weight: $bold;font-family: $font-lato;
+        @include mobile {padding-left: $px20;font-size: $px20;}
+        @include tablet {padding-left: $px20;font-size: $px20;}
+        p, &p:hover, &p:focus {color: $colorwhite; text-decoration: none; border:none;line-height: $px35;cursor: pointer;
+            @include mobile {line-height: $px20;}
+            @include tablet {line-height: $px20;}
+        }
+        span {border-bottom: $px4 solid $coloryellow;display: table;padding-bottom: $px5;
+            @include mobile { display: inline;}
+            @include tablet { display: inline;}
+        }
+    }
+    .exploreAirBox {background-color: #444444;position: absolute;z-index: 99;left: 0;top: 100%;padding: $px30 $px15 $px15 $px15;font-family: $font-lato; display: none;
+        .card-content {background-color: $colorwhite; color: $colorlightblack;
+            @include mobile {margin-bottom: $px15;}
+            .dfdf {height: 250px;width: 100%;}
+            .card-desc { display: inline-block; padding: $px20 $px20;min-height: 200px;
+                h5 {font-size: $font24; font-weight: $bold; color:$colorlightblack;margin-top: $px0;}
+            }
+        }
+        .exploreAirBoxClose {text-align: right;padding: $px10 $px0;margin: $px0; margin-top: $px10; cursor: pointer;}
+    }
+}
+
+/* -- Best Airlines -- */
+.bestAirlines {font-family: $font-lato;margin-bottom: $px50;
+        @include mobile {margin-bottom: $px20;}
+        @include tablet {margin-bottom: $px20;}
+    .rightSideAir {padding-left: $px50;
+        @include mobile {padding-left: $px0;}
+        @include smartphone {padding-left: $px0;}
+        @include tablet {padding-left: $px0;}
+    }
+    .bestAirlineWrap{margin-bottom: $px35;
+        @include mobile {margin-bottom: $px15;}
+    }
+    .bestAirH {
+        @include tablet {display: none;}
+    }
+    .heads {font-size: $px35;font-weight: $bold;color: $colorlightblack;margin-top: $px0; margin-bottom: $px10;
+        @include mobile {font-size: $px20; margin-top: $px15;}
+    }
+    .paraTxt {font-size: $font18;font-weight: $regular;color: $colorgrey; margin-bottom: $px30;
+        @include mobile {font-size: $px14; }
+    }
+    .airlineName {font-size: $font20;font-weight: $regular;color: $colorlightblack; margin-bottom: $px5;}
+    .exDiv {font-size: $font14;font-weight: $regular;color: $colorgrey;
+        i {color: $coloryellow; padding: $px0 $px10;font-size: $font16;}
+        a, a:hover, a:focus {@extend .exDiv; text-decoration: none;}
+    }
+    .expMoreAir {
+        a, a:hover, a:focus {color: $colorblue; font-size: $font16;text-decoration: none;}
+    }
+}
+
+/* -- Explore More BG Text -- */
+.exploreBgMore {background: url(../images/bgBanner2.jpg) center center no-repeat;background-size: cover;background-attachment: fixed; margin-bottom: $px50;
+        @include mobile {margin-bottom: $px20;}
+        @include tablet {margin-bottom: $px20;}
+    .jumbotron {padding: 100px $px0 100px $px0; background-color: $transparent;color: $colorwhite;font-family: $font-lato;
+            @include mobile {padding: $px20 $px0;text-align: center;margin-bottom: $px10;}
+            @include tablet {padding: $px30 $px0;text-align: center;margin-bottom: $px10;}
+        .namePlc {font-size: 90px;font-weight: $bold;margin: $px0; line-height: $px60;
+            @include mobile {font-size: $px40;line-height: $px45; }
+            @include tablet {font-size: $px50;line-height: $px45; }
+        }
+        .nameT{font-size: 50px;font-weight: $regular;
+            @include mobile {font-size: $px20;}
+            @include tablet {font-size: $px30;}
+        }
+        .btn-transparent {margin-top: $px15;
+            @include mobile {font-size: $font14;background-color: $coloryellow;}
+            i {color: $coloryellow;
+                @include mobile {color: $colorwhite;}
+            }
+        }
+        .btn-transparent:hover, .btn-transparent:focus {border: $px2 solid $coloryellow; color:$coloryellow; background-color: $transparent;
+            @include mobile {color: $colorwhite;}
+            i {color: $colorwhite;}
+        }
+    }   
+}
+
+/* -- Subscribe -- */
+.subscribe {margin-bottom: $px50; font-family: $font-lato;
+    @include mobile {margin-bottom: $px20;}
+    @include tablet {margin-bottom: $px20;}
+    .newSub {border-right: $px8 solid $txtcolor1;padding-right: $px5; padding-bottom: $px10;
+        @include mobile {border-right: none;padding-right: $px0;padding-bottom: $px0;}
+        @include tablet {border-right: none;padding-right: $px0;padding-bottom: $px0;}
+    }
+    .headin {color: $colorlightblack; font-size: $font16;font-weight: $bold;
+        strong {font-size: $font24;font-weight: $bold;}
+    }
+    .subInput {margin-top: $px25;
+        .mailInput {height: 60px;border: $px2 solid $colorlightblack;border-radius: $px0;
+            @include mobile {height: $px45;}
+        }
+        .newsBtn {padding: $px12 $px20;margin-left: -28px;color: $coloryellow;font-size: $font24; font-weight: $regular;
+            @include mobile {padding: $px8 $px10;margin-left: $px0;font-size: $font16;margin-top: $px10;}
+            @include tablet {margin-left: $px0;width: $width100;}
+        }
+        .subBtnX {
+            @include mobile {text-align:center;}
+        }
+    }
+    .chatBox { font-size: $font22;display: grid; margin-top: 88px; padding-left: $px15;padding-bottom: $px10;
+        @include mobile {font-size: $font16; margin-top: $px10; padding-left: $px0;}
+        @include tablet {font-size: $font20; margin-top: $px10; padding-left: $px0;}
+        a, a:hover, a:focus {background-color: $colorlightblack;color: $colorwhite;padding: $px15 $px15; text-decoration: none;
+            @include mobile {padding: $px10 $px12;}
+            i {color: $coloryellow; font-size: $px30;
+                @include mobile {font-size: $px18;}
+            }
+        }
+    }
+}
+
+/* -- Footer -- */
+.footerBg {background: url(../images/footerBg.jpg) center center no-repeat;background-size: cover; 
+    .footerLinks {padding-top: $px50; padding-bottom: $px10;color: $colorwhite; font-family: $font-lato;
+        @include mobile {padding-top: $px20; padding-bottom: $px5;text-align: center;}
+        @include tablet {padding-top: $px20; padding-bottom: $px5;text-align: center;}
+        h5 {font-size: $font18; color:$coloryellow; margin-bottom: $px25; 
+            @include mobile {margin-bottom: $px10;margin-top: $px20;  }
+            @include tablet {margin-bottom: $px10;margin-top: $px20;  }
+        }
+        .logoLine {font-size: $font18; color:$colorwhite;margin-top: $px10; margin-bottom: $px30; }
+        i  {color: $coloryellow;padding-right: $px5;}
+        a {font-size:$font16;color: $colorwhite; transition: all 0.5s ease;
+            &:hover, &:focus {color: $coloryellow;text-decoration: none;margin-left: $px10; transition: all 0.5s ease;}
+        }
+        .socialIcons {
+            @include mobile {margin-bottom: $px20;}
+            @include tablet {margin-bottom: $px20;}
+            a {padding-right: $px20;
+                @include mobile {padding: $px15;}
+                @include tablet {padding: $px15;}
+                i {color: $colorwhite;font-size: $font24;}
+                &:hover, &:focus {margin: $px0;
+                    i {
+                        &.fa-facebook {color: #3b5998;}
+                        &.fa-google {color: #4285f4;}
+                        &.fa-instagram {color: #e1306c;}
+                        &.fa-twitter {color: #1da1f2;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

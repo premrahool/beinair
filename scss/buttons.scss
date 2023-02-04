@@ -1,0 +1,14 @@
+
+
+@mixin button-bg($bg) {background: $bg;color:$colorwhite;border-color:$bg;font-size:$font22;font-weight: $bold; font-family:$font-lato;border-radius:$px0;transition: all 0.3s ease;
+  &:hover { background:darken($bg,8%);color:$colorwhite;border-color:darken($bg,8%);transition: all 0.3s ease;}
+  &:active {background:darken($bg,25%);color:$colorwhite;border-color:darken($bg,25%);transition: all 0.3s ease;} 
+}
+
+
+.btn-yellow{ @include button-bg($coloryellow);}
+.btn-dark { @include button-bg($colorlightblack);}
+.btn-black { @include button-bg($colorblack); }
+.btn-transparent { @include button-bg($transparent); border: $px2 solid $colorwhite; }
+
+

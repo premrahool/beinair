@@ -1,0 +1,1158 @@
+/* -- colors -- */
+/* -- font-sizes -- */
+/* -- pixels -- */
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.btn-yellow {
+  background: #ffc000;
+  color: #ffffff;
+  border-color: #ffc000;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+}
+.btn-yellow:hover {
+  background: #d6a100;
+  color: #ffffff;
+  border-color: #d6a100;
+  transition: all 0.3s ease;
+}
+.btn-yellow:active {
+  background: #806000;
+  color: #ffffff;
+  border-color: #806000;
+  transition: all 0.3s ease;
+}
+
+.btn-dark {
+  background: #333333;
+  color: #ffffff;
+  border-color: #333333;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+}
+.btn-dark:hover {
+  background: #1f1f1f;
+  color: #ffffff;
+  border-color: #1f1f1f;
+  transition: all 0.3s ease;
+}
+.btn-dark:active {
+  background: black;
+  color: #ffffff;
+  border-color: black;
+  transition: all 0.3s ease;
+}
+
+.btn-black {
+  background: #000000;
+  color: #ffffff;
+  border-color: #000000;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+}
+.btn-black:hover {
+  background: black;
+  color: #ffffff;
+  border-color: black;
+  transition: all 0.3s ease;
+}
+.btn-black:active {
+  background: black;
+  color: #ffffff;
+  border-color: black;
+  transition: all 0.3s ease;
+}
+
+.btn-transparent {
+  background: transparent;
+  color: #ffffff;
+  border-color: transparent;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+  border: 2px solid #ffffff;
+}
+.btn-transparent:hover {
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+.btn-transparent:active {
+  background: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  border-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
+}
+
+/* -- Media Query -- */
+/*   ##Device = Most of the Smartphones Mobiles (Portrait),  ##Screen = B/w 320px to 479px  */
+/* ##Device = Low Resolution Tablets, Mobiles (Landscape),  ##Screen = B/w 481px to 767px  */
+/* ##Device = Tablets, Ipads (portrait), ##Screen = B/w 768px to 1024px  */
+/* ##Device = Laptops, Desktops, ##Screen = B/w 1025px to 1280px */
+/*  ##Device = Desktops, ##Screen = 1281px to higher resolution desktops */
+/* -- Common -- */
+.relative {
+  position: relative;
+}
+
+/* -- Margin -- */
+.mr0 {
+  margin: 0px;
+}
+
+.mrT10 {
+  margin-top: 10px;
+}
+
+.mrT20 {
+  margin-top: 20px;
+}
+
+.mrT30 {
+  margin-top: 30px;
+}
+
+.mrB10 {
+  margin-bottom: 10px;
+}
+
+.mrB20 {
+  margin-bottom: 20px;
+}
+
+.mrB30 {
+  margin-bottom: 30px;
+}
+
+/* -- Padding -- */
+.pd0 {
+  padding: 0px;
+}
+
+.pdT10 {
+  padding-top: 10px;
+}
+
+.pdT20 {
+  padding-top: 20px;
+}
+
+.pdT30 {
+  padding-top: 30px;
+}
+
+.pdB10 {
+  padding-bottom: 10px;
+}
+
+.pdB20 {
+  padding-bottom: 20px;
+}
+
+.pdB30 {
+  padding-bottom: 30px;
+}
+
+/* -- Main Nav -- */
+.mainBg {
+  background: url(../images/bgBanner.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .mainBg {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainBg {
+    margin-bottom: 20px;
+  }
+}
+
+.mainNav .navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 0px;
+  padding: 5px 0px;
+}
+.mainNav .navbar-default .navbar-nav {
+  margin-top: 12px;
+}
+.mainNav .navbar-default .navbar-nav > li > a {
+  font-size: 16px;
+  color: #ffffff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+.mainNav .navbar-default .navbar-nav > li > a:hover {
+  color: #555555;
+}
+.mainNav .navbar-default .navbar-nav > li.phone-no > a {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 7px;
+}
+.mainNav .navbar-default .navbar-nav > li.phone-no > a i {
+  color: #ffc000;
+}
+.mainNav .navbar-default .navbar-nav > li.phone-no small {
+  position: absolute;
+  top: -5px;
+  left: 35px;
+  color: #ffffff;
+}
+.mainNav .navbar-default .icon-bar {
+  background-color: #ffffff;
+  width: 18px;
+}
+.mainNav .navbar-default .navbar-toggle {
+  padding: 5px 10px;
+  border-color: #ffffff;
+}
+.mainNav .navbar-brand {
+  padding: 5px 5px;
+  height: 40px;
+  width: 250px;
+}
+.mainNav .navbar-brand img {
+  height: 40px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .mainNav .navbar-brand img {
+    height: 30px;
+  }
+}
+
+/* -- Banner Text -- */
+.mainBG-txt.jumbotron {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: transparent;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .mainBG-txt.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .mainBG-txt.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 20px;
+  }
+}
+.mainBG-txt.jumbotron h1 {
+  color: #fff;
+  font-size: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .mainBG-txt.jumbotron h1 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+.mainBG-txt.jumbotron h1 span {
+  font-weight: 400;
+}
+.mainBG-txt.jumbotron h1 strong {
+  font-weight: 700;
+}
+
+/* -- Search Widget -- */
+.searchWidget {
+  margin-bottom: 100px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchWidget {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchWidget {
+    margin-bottom: 0px;
+  }
+}
+.searchWidget .tab-content {
+  padding: 30px 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchWidget .tab-content {
+    padding: 15px 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchWidget .tab-content {
+    padding: 20px 0px;
+  }
+}
+.searchWidget .nav-tabs {
+  border-bottom: none;
+}
+.searchWidget .nav-tabs li a {
+  border-radius: 0px;
+  padding: 15px 4px;
+  margin-right: 40px;
+  line-height: 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchWidget .nav-tabs li a {
+    margin-right: 10px;
+  }
+}
+
+.searchForm .form-control {
+  height: 55px;
+  background-color: #ffffff;
+  border-right-color: #727274;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 0px;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .form-control {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+.searchForm .inputFull.input-group {
+  margin-bottom: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchForm .inputFull.input-group {
+    margin-bottom: 15px;
+  }
+}
+.searchForm .inputFull.input-group .input-group-addon.blkI {
+  background-color: #333333;
+  border-color: #333333;
+  border-radius: 0px;
+}
+.searchForm .inputFull.input-group .input-group-addon.blkI img {
+  height: 25px;
+  width: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group .input-group-addon.blkI img {
+    height: 15px;
+    width: 15px;
+  }
+}
+.searchForm .inputFull.input-group .input-group-addon.mapp {
+  background-color: rgba(224, 224, 224, 0.25);
+  border-color: rgba(224, 224, 224, 0);
+  border-radius: 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group .input-group-addon.mapp {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+.searchForm .inputFull.input-group .input-group-addon.mapp img {
+  height: 25px;
+  width: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group .input-group-addon.mapp img {
+    height: 20px;
+    width: 15px;
+  }
+}
+.searchForm .inputFull.input-group .form-control {
+  background-color: rgba(224, 224, 224, 0.25);
+  border-color: rgba(224, 224, 224, 0);
+  border-right: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group .form-control {
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0);
+  }
+}
+.searchForm .inputFull.input-group ::-webkit-input-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group ::-webkit-input-placeholder {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+.searchForm .inputFull.input-group :-moz-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group :-moz-placeholder {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+.searchForm .inputFull.input-group ::-moz-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group ::-moz-placeholder {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+.searchForm .inputFull.input-group :-ms-input-placeholder {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .inputFull.input-group :-ms-input-placeholder {
+    font-size: 14px;
+    height: 40px;
+  }
+}
+.searchForm .btn-yellow {
+  width: 100%;
+  height: 55px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .btn-yellow {
+    font-size: 16px;
+    height: 40px;
+  }
+}
+.searchForm .lwInput .form-control {
+  margin-bottom: 15px;
+  color: #3f3f3f;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .lwInput .form-control {
+    font-size: 12px;
+    height: 40px;
+  }
+}
+.searchForm .lwInput .form-control.withIcon {
+  padding-left: 30px;
+  text-align: left;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .lwInput .form-control.withIcon {
+    font-size: 12px;
+    height: 40px;
+  }
+}
+.searchForm .lwInput ::-webkit-input-placeholder {
+  color: #3f3f3f;
+  font-weight: 400;
+}
+.searchForm .lwInput :-moz-placeholder {
+  color: #3f3f3f;
+  font-weight: 400;
+}
+.searchForm .lwInput ::-moz-placeholder {
+  color: #3f3f3f;
+  font-weight: 400;
+}
+.searchForm .lwInput :-ms-input-placeholder {
+  color: #3f3f3f;
+  font-weight: 400;
+}
+.searchForm .lwInput i {
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  color: #3f3f3f;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .lwInput i {
+    top: 25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchForm .lwInput i {
+    left: 2%;
+  }
+}
+.searchForm .lwInput i.caretD {
+  right: 5%;
+  left: initial;
+}
+.searchForm .flightPortDtl {
+  margin-bottom: 15px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .flightPortDtl {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchForm .flightPortDtl {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+}
+.searchForm .flightPortDtl p, .searchForm .flightPortDtl span, .searchForm .flightPortDtl .checkbox-inline {
+  color: #ffffff;
+  font-weight: 700;
+  margin-right: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .searchForm .flightPortDtl p, .searchForm .flightPortDtl span, .searchForm .flightPortDtl .checkbox-inline {
+    font-size: 13px;
+  }
+}
+.searchForm .flightPortDtl p:hover, .searchForm .flightPortDtl span:hover, .searchForm .flightPortDtl .checkbox-inline:hover {
+  color: #ffc000;
+  text-decoration: none;
+}
+.searchForm .flightPortDtl p:focus, .searchForm .flightPortDtl span:focus, .searchForm .flightPortDtl .checkbox-inline:focus {
+  text-decoration: none;
+}
+.searchForm .flightPortDtl .checkbox-inline input[type=checkbox] {
+  margin-left: -18px;
+  margin-top: 6px;
+}
+.searchForm .flightPortDtl .rtnFrmOtrForm, .searchForm .flightPortDtl .prefferedAirSelect {
+  display: none;
+  margin-top: 10px;
+}
+.searchForm .flightPortDtl .prefferedAirSelect select {
+  margin-top: -2px;
+}
+.searchForm .flightPortDtl .PrefferdText {
+  display: inline;
+}
+
+.datepicker.dropdown-menu {
+  padding: 5px 10px;
+  border-radius: 0px;
+  background-color: #333333;
+  color: #ffffff;
+}
+.datepicker .table-condensed > tbody > tr > td, .datepicker .table-condensed > tbody > tr > th, .datepicker .table-condensed > tfoot > tr > td, .datepicker .table-condensed > tfoot > tr > th, .datepicker .table-condensed > thead > tr > td, .datepicker .table-condensed > thead > tr > th {
+  padding: 8px 10px;
+}
+.datepicker table tr td.today, .datepicker table tr td.today.disabled, .datepicker table tr td.today.disabled:hover, .datepicker table tr td.today:hover {
+  background: #ffffff;
+  background-image: none !important;
+  border-radius: 0px;
+}
+.datepicker table tr td.day.focused, .datepicker table tr td.day:hover, .datepicker .datepicker-switch:hover, .datepicker .next:hover, .datepicker .prev:hover, .datepicker tfoot tr th:hover, .datepicker table tr td span.focused, .datepicker table tr td span:hover, .datepicker table tr td span.active, .datepicker table tr td span.active.disabled, .datepicker table tr td span.active.disabled:hover, .datepicker table tr td span.active:hover {
+  background-color: #ffc000 !important;
+  background-image: none;
+  color: #000000;
+  border-radius: 0px;
+}
+.datepicker table tr td.range, .datepicker table tr td.range.disabled, .datepicker table tr td.range.disabled:hover, .datepicker table tr td.range:hover {
+  background: #3f3f3f;
+  color: #ffffff;
+  border-radius: 0px;
+}
+.datepicker table tr td.active.active, .datepicker table tr td.active.disabled, .datepicker table tr td.active.disabled.active, .datepicker table tr td.active.disabled.disabled, .datepicker table tr td.active.disabled:active, .datepicker table tr td.active.disabled:hover, .datepicker table tr td.active.disabled:hover.active, .datepicker table tr td.active.disabled:hover.disabled, .datepicker table tr td.active.disabled:hover:active, .datepicker table tr td.active.disabled:hover:hover, .datepicker table tr td.active.disabled:hover[disabled], .datepicker table tr td.active.disabled[disabled], .datepicker table tr td.active:active, .datepicker table tr td.active:hover, .datepicker table tr td.active:hover.active, .datepicker table tr td.active:hover.disabled, .datepicker table tr td.active:hover:active, .datepicker table tr td.active:hover:hover, .datepicker table tr td.active:hover[disabled], .datepicker table tr td.active[disabled], .datepicker table tr td.selected {
+  background-color: #ffc000;
+  background-image: none;
+  color: #000000;
+  border-radius: 0px;
+}
+.datepicker.datepicker-dropdown.datepicker-orient-top:before, .datepicker.datepicker-dropdown.datepicker-orient-top:after {
+  border-top: 7px solid #333333;
+}
+
+/* -- Explore -- */
+.exploreM {
+  background-color: #333333;
+  color: #ffffff;
+  margin-bottom: 50px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  position: relative;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreM {
+    margin-bottom: 10px;
+    padding: 20px 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreM {
+    margin-bottom: 20px;
+    padding: 20px 0px;
+  }
+}
+.exploreM .headOne {
+  font-family: "Lato", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffc000;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreM .headOne {
+    font-size: 20px;
+  }
+}
+.exploreM .lines {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+.exploreM .expModalLink {
+  border-left: 5px solid #5193ff;
+  padding-left: 40px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreM .expModalLink {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreM .expModalLink {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+}
+.exploreM .expModalLink p, .exploreM .expModalLinkp:hover, .exploreM .expModalLinkp:focus {
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  line-height: 35px;
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreM .expModalLink p, .exploreM .expModalLinkp:hover, .exploreM .expModalLinkp:focus {
+    line-height: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreM .expModalLink p, .exploreM .expModalLinkp:hover, .exploreM .expModalLinkp:focus {
+    line-height: 20px;
+  }
+}
+.exploreM .expModalLink span {
+  border-bottom: 4px solid #ffc000;
+  display: table;
+  padding-bottom: 5px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreM .expModalLink span {
+    display: inline;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreM .expModalLink span {
+    display: inline;
+  }
+}
+.exploreM .exploreAirBox {
+  background-color: #444444;
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  top: 100%;
+  padding: 30px 15px 15px 15px;
+  font-family: "Lato", sans-serif;
+  display: none;
+}
+.exploreM .exploreAirBox .card-content {
+  background-color: #ffffff;
+  color: #333333;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreM .exploreAirBox .card-content {
+    margin-bottom: 15px;
+  }
+}
+.exploreM .exploreAirBox .card-content .dfdf {
+  height: 250px;
+  width: 100%;
+}
+.exploreM .exploreAirBox .card-content .card-desc {
+  display: inline-block;
+  padding: 20px 20px;
+  min-height: 200px;
+}
+.exploreM .exploreAirBox .card-content .card-desc h5 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 0px;
+}
+.exploreM .exploreAirBox .exploreAirBoxClose {
+  text-align: right;
+  padding: 10px 0px;
+  margin: 0px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* -- Best Airlines -- */
+.bestAirlines {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bestAirlines {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bestAirlines {
+    margin-bottom: 20px;
+  }
+}
+.bestAirlines .rightSideAir {
+  padding-left: 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bestAirlines .rightSideAir {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .bestAirlines .rightSideAir {
+    padding-left: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bestAirlines .rightSideAir {
+    padding-left: 0px;
+  }
+}
+.bestAirlines .bestAirlineWrap {
+  margin-bottom: 35px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bestAirlines .bestAirlineWrap {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bestAirlines .bestAirH {
+    display: none;
+  }
+}
+.bestAirlines .heads {
+  font-size: 35px;
+  font-weight: 700;
+  color: #333333;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bestAirlines .heads {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+}
+.bestAirlines .paraTxt {
+  font-size: 18px;
+  font-weight: 400;
+  color: #555555;
+  margin-bottom: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .bestAirlines .paraTxt {
+    font-size: 14px;
+  }
+}
+.bestAirlines .airlineName {
+  font-size: 20px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 5px;
+}
+.bestAirlines .exDiv, .bestAirlines .exDiv a, .bestAirlines .exDiv a:hover, .bestAirlines .exDiv a:focus {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555555;
+}
+.bestAirlines .exDiv i, .bestAirlines .exDiv a:hover i, .bestAirlines .exDiv a:focus i {
+  color: #ffc000;
+  padding: 0px 10px;
+  font-size: 16px;
+}
+.bestAirlines .exDiv a, .bestAirlines .exDiv a:hover a, .bestAirlines .exDiv a:focus a, .bestAirlines .exDiv a:hover, .bestAirlines .exDiv a:focus {
+  text-decoration: none;
+}
+.bestAirlines .expMoreAir a, .bestAirlines .expMoreAir a:hover, .bestAirlines .expMoreAir a:focus {
+  color: #2059a8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* -- Explore More BG Text -- */
+.exploreBgMore {
+  background: url(../images/bgBanner2.jpg) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 50px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreBgMore {
+    margin-bottom: 20px;
+  }
+}
+.exploreBgMore .jumbotron {
+  padding: 100px 0px 100px 0px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore .jumbotron {
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreBgMore .jumbotron {
+    padding: 30px 0px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.exploreBgMore .jumbotron .namePlc {
+  font-size: 90px;
+  font-weight: 700;
+  margin: 0px;
+  line-height: 60px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore .jumbotron .namePlc {
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreBgMore .jumbotron .namePlc {
+    font-size: 50px;
+    line-height: 45px;
+  }
+}
+.exploreBgMore .jumbotron .nameT {
+  font-size: 50px;
+  font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore .jumbotron .nameT {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .exploreBgMore .jumbotron .nameT {
+    font-size: 30px;
+  }
+}
+.exploreBgMore .jumbotron .btn-transparent {
+  margin-top: 15px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore .jumbotron .btn-transparent {
+    font-size: 14px;
+    background-color: #ffc000;
+  }
+}
+.exploreBgMore .jumbotron .btn-transparent i {
+  color: #ffc000;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore .jumbotron .btn-transparent i {
+    color: #ffffff;
+  }
+}
+.exploreBgMore .jumbotron .btn-transparent:hover, .exploreBgMore .jumbotron .btn-transparent:focus {
+  border: 2px solid #ffc000;
+  color: #ffc000;
+  background-color: transparent;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .exploreBgMore .jumbotron .btn-transparent:hover, .exploreBgMore .jumbotron .btn-transparent:focus {
+    color: #ffffff;
+  }
+}
+.exploreBgMore .jumbotron .btn-transparent:hover i, .exploreBgMore .jumbotron .btn-transparent:focus i {
+  color: #ffffff;
+}
+
+/* -- Subscribe -- */
+.subscribe {
+  margin-bottom: 50px;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe {
+    margin-bottom: 20px;
+  }
+}
+.subscribe .newSub {
+  border-right: 8px solid #5193ff;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .newSub {
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe .newSub {
+    border-right: none;
+    padding-right: 0px;
+    padding-bottom: 0px;
+  }
+}
+.subscribe .headin {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+}
+.subscribe .headin strong {
+  font-size: 24px;
+  font-weight: 700;
+}
+.subscribe .subInput {
+  margin-top: 25px;
+}
+.subscribe .subInput .mailInput {
+  height: 60px;
+  border: 2px solid #333333;
+  border-radius: 0px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .subInput .mailInput {
+    height: 45px;
+  }
+}
+.subscribe .subInput .newsBtn {
+  padding: 12px 20px;
+  margin-left: -28px;
+  color: #ffc000;
+  font-size: 24px;
+  font-weight: 400;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .subInput .newsBtn {
+    padding: 8px 10px;
+    margin-left: 0px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe .subInput .newsBtn {
+    margin-left: 0px;
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .subInput .subBtnX {
+    text-align: center;
+  }
+}
+.subscribe .chatBox {
+  font-size: 22px;
+  display: grid;
+  margin-top: 88px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .chatBox {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .subscribe .chatBox {
+    font-size: 20px;
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+}
+.subscribe .chatBox a, .subscribe .chatBox a:hover, .subscribe .chatBox a:focus {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 15px 15px;
+  text-decoration: none;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .chatBox a, .subscribe .chatBox a:hover, .subscribe .chatBox a:focus {
+    padding: 10px 12px;
+  }
+}
+.subscribe .chatBox a i, .subscribe .chatBox a:hover i, .subscribe .chatBox a:focus i {
+  color: #ffc000;
+  font-size: 30px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .subscribe .chatBox a i, .subscribe .chatBox a:hover i, .subscribe .chatBox a:focus i {
+    font-size: 18px;
+  }
+}
+
+/* -- Footer -- */
+.footerBg {
+  background: url(../images/footerBg.jpg) center center no-repeat;
+  background-size: cover;
+}
+.footerBg .footerLinks {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footerBg .footerLinks {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerBg .footerLinks {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+}
+.footerBg .footerLinks h5 {
+  font-size: 18px;
+  color: #ffc000;
+  margin-bottom: 25px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footerBg .footerLinks h5 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerBg .footerLinks h5 {
+    margin-bottom: 10px;
+    margin-top: 20px;
+  }
+}
+.footerBg .footerLinks .logoLine {
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.footerBg .footerLinks i {
+  color: #ffc000;
+  padding-right: 5px;
+}
+.footerBg .footerLinks a {
+  font-size: 16px;
+  color: #ffffff;
+  transition: all 0.5s ease;
+}
+.footerBg .footerLinks a:hover, .footerBg .footerLinks a:focus {
+  color: #ffc000;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 0.5s ease;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footerBg .footerLinks .socialIcons {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerBg .footerLinks .socialIcons {
+    margin-bottom: 20px;
+  }
+}
+.footerBg .footerLinks .socialIcons a {
+  padding-right: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .footerBg .footerLinks .socialIcons a {
+    padding: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footerBg .footerLinks .socialIcons a {
+    padding: 15px;
+  }
+}
+.footerBg .footerLinks .socialIcons a i {
+  color: #ffffff;
+  font-size: 24px;
+}
+.footerBg .footerLinks .socialIcons a:hover, .footerBg .footerLinks .socialIcons a:focus {
+  margin: 0px;
+}
+.footerBg .footerLinks .socialIcons a:hover i.fa-facebook, .footerBg .footerLinks .socialIcons a:focus i.fa-facebook {
+  color: #3b5998;
+}
+.footerBg .footerLinks .socialIcons a:hover i.fa-google, .footerBg .footerLinks .socialIcons a:focus i.fa-google {
+  color: #4285f4;
+}
+.footerBg .footerLinks .socialIcons a:hover i.fa-instagram, .footerBg .footerLinks .socialIcons a:focus i.fa-instagram {
+  color: #e1306c;
+}
+.footerBg .footerLinks .socialIcons a:hover i.fa-twitter, .footerBg .footerLinks .socialIcons a:focus i.fa-twitter {
+  color: #1da1f2;
+}
+
+/*# sourceMappingURL=style.css.map */

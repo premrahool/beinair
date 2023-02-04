@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title> BEIN AIR </title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Roboto:300,400,500,700" rel="stylesheet">
+      <link rel="stylesheet" href="./css/bootstrap-datepicker.min.css">
+      <link rel="stylesheet" href="./css/bootstrap.min.css">
+      <!--[if IE]><link href="~/Content/NewHomePage/all-ie-only.css" rel="stylesheet" /><![endif]-->
+      <link rel="stylesheet" href="./css/font-awesome.min.css">
+      <link rel="icon" href="./images/favicon.png"/>
+      <link rel="stylesheet" href="./css/style.css">
+   </head>
+   <body>
+      
+      <!-- Banner -->      
+      <section class="mainBg">
+         <!-- Header -->
+         <header class="mainNav">
+               <nav class="navbar navbar-default">
+                  <div class="container">
+                     <!-- Logo -->
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                        <img src="./images/logo.png" alt="Image" title="BEIN AIR" class="img-responsive"/>
+                        </a>
+                        <a class="mCall hide" href="tel:18552227164" title="Call">Call</a>
+                     </div>
+                     <!-- Nav -->
+                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                           <li class="hidden-xs"><a href="#">Flights</a></li>
+                           <li class="hidden-xs"><a href="#">Hotels</a></li>
+                           <li><a href="#">Scratch Pad</a></li>
+                           <li><a href="#">Visa Services</a></li>
+                           <li><a href="#">Blog</a></li>
+                           <li class="phone-no"><small>Toll Free (24 x 7) </small><a href="tel:18552227164" title="Call"> <i class="fa fa-phone" aria-hidden="true"></i> 1-855-222-7164</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+         </header>
+         
+         <!-- Txt -->
+         <div class="jumbotron mainBG-txt">
+            <div class="container">
+                  <h1 class="text-center"><span></span> <strong>it’s all about to be in air...</strong></h1>
+            </div>
+         </div>
+         
+         <!-- Search Widget -->
+         <div class="container-fluid">
+            <div class="row">
+               <div class="container searchWidget">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                     <li role="presentation" class="active"><a href="#flights" aria-controls="flights" role="tab" data-toggle="tab"> <img src="./images/tab-flight-grey.png" alt="Image" title="BEIN AIR" class=""/> </a></li>
+                     <li role="presentation" class=""><a href="#hotels" aria-controls="hotels" role="tab" data-toggle="tab"> <img src="./images/tab-hotel-white.png" alt="Image" title="BEIN AIR" class=""/> </a></li>
+                     <li role="presentation" class=""><a href="#cars" aria-controls="cars" role="tab" data-toggle="tab"> <img src="./images/tab-car-white.png" alt="Image" title="BEIN AIR" class=""/> </a></li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content clearfix">
+                     <div role="tabpanel" class="tab-pane clearfix active" id="flights">
+                        <div class="col-xs-12">
+                           <div class="row searchForm">
+                              <form class="forms">
+                                 <div class="">
+                                    <div class="form-group">
+                                       <div class="input-group inputFull">
+                                          <div class="input-group-addon blkI"> <img src="./images/flight-or.png" alt="Image" title="BEIN AIR" class=""/> </div>
+                                          <input type="text" class="form-control" placeholder="Origin">
+                                          <div class="input-group-addon mapp"> <img src="./images/map-icon.png" alt="Image" title="BEIN AIR" class=""/> </div>        
+                                       </div>
+                                       <div class="input-group inputFull">
+                                          <div class="input-group-addon blkI"> <img src="./images/flight-des.png" alt="Image" title="BEIN AIR" class=""/> </div>
+                                          <input type="text" class="form-control" placeholder="Destination">
+                                          <div class="input-group-addon mapp"> <img src="./images/map-icon.png" alt="Image" title="BEIN AIR" class=""/> </div>
+                                       </div>
+                                       <div class="col-md-2 col-sm-12 col-xs-12">
+                                          <div class="row lwInput">
+                                             <select class="form-control">
+                                                <option> Round Trip </option>
+                                                <option> One Way </option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="input-daterange" id="datepicker">
+                                          <div class="col-md-2 col-sm-6 col-xs-6">
+                                             <div class="row lwInput">
+                                                   <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                                   <input type="text" class="form-control range-start withIcon" placeholder="Depart">
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2 col-sm-6 col-xs-6">
+                                             <div class="row lwInput">
+                                                   <i class="fa fa-calendar-check-o" aria-hidden="true"></i>
+                                                   <input type="text" class="form-control range-end withIcon" placeholder="Return">
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2 col-sm-6 col-xs-6">
+                                          <div class="row lwInput">
+                                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                                <input type="text" class="form-control withIcon" placeholder="Travellers">
+                                                <i class="fa fa-caret-down caretD" aria-hidden="true"></i>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2 col-sm-6 col-xs-6">
+                                          <div class="row lwInput">
+                                             <i class="fa fa-wheelchair" aria-hidden="true"></i>
+                                             <select class="form-control withIcon">
+                                                <option> Economy </option>
+                                                <option> Business </option>
+                                                <option> First </option>
+                                             </select>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-2 col-sm-12 col-xs-12">
+                                          <div class="row">
+                                             <button type="submit" class="btn btn-default btn-yellow">Search &nbsp; <i class="fa fa-search" aria-hidden="true"></i></button>
+                                          </div>
+                                       </div>
+                                       
+                                       <div class="col-md-6 col-sm-12 col-xs-12">
+                                          <div class="row flightPortDtl">
+                                             <div class=""><p class="rtnFrmOtr"> Returning from other city or airport </p></div>
+                                             <div class="rtnFrmOtrForm">
+                                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                                   <div class="row lwInput">
+                                                         <i class="fa fa-plane" aria-hidden="true"></i>
+                                                         <input type="text" class="form-control withIcon" placeholder="Origin City">
+                                                   </div>
+                                                </div>
+                                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                                   <div class="row lwInput">
+                                                         <i class="fa fa-plane" aria-hidden="true"></i>
+                                                         <input type="text" class="form-control withIcon" placeholder="Destination City">
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="col-md-6 col-sm-12 col-xs-12">
+                                          <div class="row flightPortDtl">
+                                             <div class="PrefferdText">
+                                                <span class="prefferedAirs"> Preferred Airlines </span>
+                                                <label class="checkbox-inline">
+                                                   <input type="checkbox" id="directflights" value="option1"> Direct flights only
+                                                </label>
+                                             </div>
+                                             <div class="prefferedAirSelect">
+                                                <div class="col-md-6 col-sm-12 col-xs-12">
+                                                   <div class="row lwInput">
+                                                      <i class="fa fa-plane" aria-hidden="true"></i>
+                                                      <select class="form-control withIcon">
+                                                         <option> Air One </option>
+                                                         <option> Air Two </option>
+                                                         <option> Three </option>
+                                                      </select>
+                                                   </div>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                     </div>
+                     <div role="tabpanel" class="tab-pane" id="hotels">
+                        <div class="pT20 pB20">
+                        </div>
+                     </div>
+                     <div role="tabpanel" class="tab-pane" id="cars">
+                        <div class="pT20 pB20">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <!-- Explore -->
+      <section class="container-fluid">
+         <div class="row">
+            <div class="container">
+               <div class="col-xs-12 exploreM">
+                  <div class="col-md-9 col-sm-12 col-xs-12">
+                     <h2 class="headOne">Reason to choose beinair...</h2>
+                     <p class="">No more frustrating long queue at the airport. Now book flights and hotels without even leaving your couch!</p>
+                  </div>
+                  <div class="col-md-3 col-sm-12 col-xs-12">
+                     <div class="expModalLink">   <p class="exploreAirPop">Explore  <span>More</span>  </p> </div>
+                  </div>
+                  <div class="col-xs-12 exploreAirBox">
+                     <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="card-content">
+                           <div class="card-img">
+                              <img src="./images/ex-air1.jpg" alt="Image" title="BEIN AIR" class="img-responsive"/>
+                           </div>
+                           <div class="card-desc">
+                              <h5>  A 380 Airbus </h5>
+                              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                              <div class="pull-right"> <a href="#" class="btn btn-yellow "> <i class="fa fa-plane" aria-hidden="true"></i> &nbsp; Fly </a> </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6 col-sm-6 col-xs-12">
+                        <div class="card-content">
+                           <div class="card-img">
+                              <img src="./images/ex-air1.jpg" alt="Image" title="BEIN AIR" class="img-responsive"/>
+                           </div>
+                           <div class="card-desc">
+                              <h5> A 380 Airbus </h5>
+                              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                              <div class="pull-right"> <a href="#" class="btn btn-yellow "> <i class="fa fa-plane" aria-hidden="true"></i> &nbsp; Fly </a> </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xs-12">
+                        <p class="exploreAirBoxClose"> Close &nbsp; <i class="fa fa-window-close-o" aria-hidden="true"></i> </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      
+      <!-- Best Airlines -->
+      <section class="container-fluid">
+         <div class="row">
+            <div class="container bestAirlines">
+               <div class="row">
+                     <div class="col-md-5 col-sm-12 col-xs-12 hidded-sm hidden-xs">
+                           <img src="./images/air.jpg" alt="Image" title="BEIN AIR" class="img-responsive bestAirH">
+                     </div>
+                     <div class="col-md-7 col-sm-12 col-xs-12">
+                        <div class="rightSideAir">
+                           <h3 class="heads">beinair... with best airlines</h3>
+                           <p class="paraTxt">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut eim ad </p>
+                           <div class="row bestAirlineWrap">
+                              <div class="col-md-2 col-sm-2 col-xs-3">
+                                 <img src="./images/airlinelogo1.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                              <div class="col-md-5 col-sm-5 col-xs-9">
+                                 <p class="airlineName">United Airlines</p>
+                                 <div class="exDiv"><span>Find best fares</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="">Explore</a> </div>
+                              </div>
+                              <div class="col-md-5 col-sm-5 hidden-xs">
+                                    <img src="./images/airline1.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                           </div>
+                           <div class="row bestAirlineWrap">
+                              <div class="col-md-2 col-sm-2 col-xs-3">
+                                 <img src="./images/airlinelogo2.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                              <div class="col-md-5 col-sm-5 col-xs-9">
+                                 <p class="airlineName">Ethiad Airways</p>
+                                 <div class="exDiv"><span>Find best fares</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="">Explore</a> </div>
+                              </div>
+                              <div class="col-md-5 col-sm-5 hidden-xs">
+                                    <img src="./images/airline2.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                           </div>
+                           <div class="row bestAirlineWrap">
+                              <div class="col-md-2 col-sm-2 col-xs-3">
+                                 <img src="./images/airlinelogo3.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                              <div class="col-md-5 col-sm-5 col-xs-9">
+                                 <p class="airlineName">Emirates</p>
+                                 <div class="exDiv"><span>Find best fares</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="">Explore</a> </div>
+                              </div>
+                              <div class="col-md-5 col-sm-5 hidden-xs">
+                                    <img src="./images/airline3.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                           </div>
+                           <div class="row bestAirlineWrap">
+                              <div class="col-md-2 col-sm-2 col-xs-3">
+                                 <img src="./images/airlinelogo4.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                              <div class="col-md-5 col-sm-5 col-xs-9">
+                                 <p class="airlineName">Lufthansa</p>
+                                 <div class="exDiv"><span>Find best fares</span> <i class="fa fa-long-arrow-right" aria-hidden="true"></i> <a href="">Explore</a> </div>
+                              </div>
+                              <div class="col-md-5 col-sm-5 hidden-xs">
+                                    <img src="./images/airline4.png" alt="Image" title="BEIN AIR" class="">
+                              </div>
+                           </div>
+                           <div class="row">
+                              <div class="col-xs-12 expMoreAir">
+                                 <a href="#"> Explore more best airline &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Explore More BG Text -->
+      <section class="container-fluid exploreBgMore">
+         <div class="row">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="jumbotron">
+                        <h4 class="namePlc">  Santorini </h4>
+                        <p class="nameT"> Greece </p>
+                        <button type="submit" class="btn btn-default btn-transparent"> Explore more &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+            
+      <!-- Subscribe -->
+      <section class="container-fluid">
+         <div class="row">
+            <div class="container">
+               <div class="row subscribe">
+                  <div class="col-md-7 col-sm-12 col-xs-12">
+                     <h5 class="headin"> Subscribe <strong> beinair </strong> to get  latest offers and deals today </h5>
+                     <div class="newSub">
+                        <p class="">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+                        <form class="row form-group subInput">
+                           <div class="col-md-8 col-sm-8 col-xs-12">
+                              <input class="form-control mailInput" placeholder="Enter Your Email Address ..." name="EMAIL" id="" type="email">
+                           </div>
+                           <div class="col-md-4 col-sm-4 col-xs-12 subBtnX">
+                              <a href="#" type="submit" class="btn btn-dark newsBtn"> Subscribe &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-md-5 col-sm-12 col-xs-12">
+                     <div class="chatBox">  
+                        <a href="#"> <span class="pull-left"> Let’s chat with us </span>  <span class="pull-right"> <i class="fa fa-commenting-o" aria-hidden="true"></i> </span>  </a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Footer -->
+      <section class="container-fluid footerBg">
+         <div class="row">
+            <div class="container">
+               <div class="row footerLinks">
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <img src="./images/logo-footer.png" alt="Image" title="BEIN AIR" class="">
+                     <p class="logoLine">  it’s all about be in air...  </p>
+                     <p class="socialIcons">  
+                        <a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i>   </a>
+                        <a href="#"> <i class="fa fa-google" aria-hidden="true"></i>   </a>
+                        <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i>   </a>
+                        <a href="#"> <i class="fa fa-twitter" aria-hidden="true"></i>   </a>
+                     </p>
+
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <h5>  CONTACT US </h4>
+                     <p> <a href="tel:111123456789" title="Call"> <i class="fa fa-phone" aria-hidden="true"></i> +11 112-345-6789 </a> </p>
+                     <p> <a href="mailto:support@beinair.com"> <i class="fa fa-envelope" aria-hidden="true"></i> support@beinair.com </a> </p>
+                     <p>  <i class="fa fa-map-marker" aria-hidden="true"></i> 6815 W, 63rd St  <br/> &nbsp; &nbsp; &nbsp; Chicago Il 60638 USA </p>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <h5>  COMPANY </h4>
+                     <p> <a href="#"> About us </a> </p>
+                     <p> <a href="#"> Terms & Conditions </a> </p>
+                     <p> <a href="#"> Privacy Policy </a> </p>
+                     <p> <a href="#"> Refund Policy </a> </p>
+                     <p> <a href="#"> Site Map </a> </p>
+                  </div>
+                  <div class="col-md-3 col-sm-6 col-xs-12">
+                     <h5> QUICK LINKS </h4>
+                     <p> <a href="#"> Home </a> </p>
+                     <p> <a href="#"> Hotels </a> </p>
+                     <p> <a href="#"> Cars </a> </p>
+                     <p> <a href="#"> Cruise </a> </p>
+                     <p> <a href="#"> Baggage fees </a> </p>
+                  </div>
+                  <div class="col-xs-12">
+                        <hr/>
+                  </div>
+                  <div class="col-xs-12 text-center">
+                     <p> Copyright © 2014-2018 247 Traveltech Inc. All rights reserved. California CST # : 2123835-40. Fla. SoT Ref. No. ST40291 </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="./js/bootstrap-datepicker.min.js"></script>
+      <script src="./js/bootstrap.min.js"></script>
+      <script src="./js/custom.js"></script>
+   </body>
+</html>
